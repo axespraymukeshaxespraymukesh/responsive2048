@@ -1,0 +1,107 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+  }
+
+  .container1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+  }
+
+  .back{
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  .content{
+    justify-content: center;
+
+  }
+  
+  h1 {
+    font-size: 80px;
+    line-height: 0.7;
+    background: linear-gradient(135deg, #041d3d, #fff, crimson);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0px;
+  }
+  
+
+  
+  .info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #041d3d, #fff, crimson);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .grid{
+    display: flex;
+    flex-wrap: wrap;
+    width: 480px;
+    height: 480px;
+    background-color: #BBADA0;
+    border: 7px solid #BBADA0;
+    border-radius: 6px;
+    margin-top: 20px;
+    background: linear-gradient(135deg, #041d3d, #fff, crimson);
+    -webkit-backface-visibility: transparent;
+    -webkit-background-clip: text;
+  }
+  
+  .grid div {
+    width: 100px;
+    height: 100px;
+    margin: 7px;
+    border-radius: 3px;
+    background-color: #EEE4DA;
+    color: #afa192;
+    font-weight: bold;
+    text-align: center;
+    font-size: 60px;
+    line-height: 1.6;
+  }
+  
+  .score-container {
+    text-align: center;
+    width: 70px;
+    height: 60px;
+    border-radius: 3px;
+    background: linear-gradient(135deg, #041d3d, #fff, crimson);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #FFFFFF;
+  }
+  
+  #score {
+    font-size: 30px;
+  }
+  
+  .score-title {
+    font-size: 16px;
+  }
+
+  @media (min-aspect-ratio:16/9){
+    .back{
+      width: 100%;
+      height: auto;
+    }
+  }
+  @media (max-aspect-ratio:16/9){
+    .back{
+      width: auto;
+      height: 100%;
+    }
+  }
+
+
+
